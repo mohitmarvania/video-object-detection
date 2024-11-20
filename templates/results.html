@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1 style="text-align: center">Frames Processed</h1>
+    <div>
+        {% for frame in frames %}
+            <img src="/processed_frames/{{ frame }}" alt="Frame">
+        {% endfor %}
+    </div>
+    <div class="result">
+        <a href="/download">Download Processed Video</a>
+        <button onclick="window.location.href='/'">Home</button>
+    </div>
+</body>
+</html>
